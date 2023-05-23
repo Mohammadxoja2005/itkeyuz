@@ -1,10 +1,11 @@
 .header {
-  max-width: 1440px;
+  // max-width: 1440px;
   margin: auto;
   background-image: url("../../assets/img/background.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  // min-height: 100vh;
   //   padding: 0 20px;
 }
 
@@ -95,6 +96,5 @@
   font-weight: 300;
   font-family: comic-regular;
   color: white;
-  font-style: normal;
   text-align: center;
 }
