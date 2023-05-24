@@ -5,6 +5,8 @@ import HEADER from '../../layouts/header';
 import BENEFITS from './components/benefits';
 import SERVICES from './components/services';
 import TEAM from './components/team';
+import CLIENT from './components/clients';
+import OFFER from './components/offer';
 
 const HOME: FC = () => {
     return (
@@ -13,6 +15,8 @@ const HOME: FC = () => {
             <BENEFITS />
             <SERVICES />
             <TEAM />
+            <CLIENT />
+            <OFFER />
         </>
     )
 }

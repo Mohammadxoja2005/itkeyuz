@@ -209,3 +209,34 @@ export const services: Array<{ id: number, icon: string, name: string, des: Arra
         price: 1000000
     },
 ]
+
+export const offers: Array<{ id: number, name: string }> = [
+    {
+        id: 1,
+        name: "Продвижение сайта"
+    },
+    {
+        id: 2,
+        name: "Поддержка сайта"
+    },
+    {
+        id: 3,
+        name: "Создание сайта"
+    },
+    {
+        id: 4,
+        name: "Мобильная разработка"
+    },
+    {
+        id: 5,
+        name: "IP телефония"
+    },
+    {
+        id: 6,
+        name: "Внедрение CRM"
+    },
+    {
+        id: 7,
+        name: "Другое"
+    },
+]
