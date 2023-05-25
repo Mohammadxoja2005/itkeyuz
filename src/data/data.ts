@@ -240,3 +240,74 @@ export const offers: Array<{ id: number, name: string }> = [
         name: "Другое"
     },
 ]
+
+export const footerData: Array<{ id: number, name: string, list: Array<{ id: number, name: string }> }> = [
+    {
+        id: 1,
+        name: "Стандарты обслуживания",
+        list: [
+            {
+                id: 1,
+                name: "Основные стандарты"
+            },
+            {
+                id: 2,
+                name: "Оценка времени"
+            },
+            {
+                id: 3,
+                name: "Создание сайтов с нуля"
+            }
+        ]
+    },
+    {
+        id: 2,
+        name: "Тарифы",
+        list: [
+            {
+                id: 1,
+                name: "Абонемент"
+            },
+            {
+                id: 2,
+                name: "Депозитный"
+            },
+            {
+                id: 3,
+                name: "Абонемент +"
+            }
+        ]
+    },
+    {
+        id: 3,
+        name: "Наши услуги",
+        list: [
+            {
+                id: 1,
+                name: "Список услуг"
+            },
+            {
+                id: 2,
+                name: "Форма заполнения"
+            }
+        ]
+    },
+    {
+        id: 4,
+        name: "О компании",
+        list: [
+            {
+                id: 1,
+                name: "Компания IT Key"
+            },
+            {
+                id: 2,
+                name: "Миссия компании"
+            },
+            {
+                id: 3,
+                name: "Новости"
+            }
+        ]
+    }
+]

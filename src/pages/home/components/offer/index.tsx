@@ -74,19 +74,42 @@ const OFFER: FC = () => {
                             Укажите примерную сумму, которую планируется потратить на реализацию проекта</p>
                     </div>
 
-                    <div className={styles.offer_inputs}>
-                        <div className={styles.offer_input_border}>
-                            <input type="text" placeholder='Адрес сайта' className={styles.offer_input} />
+                    <div className={styles.offer_inputs_con}>
+                        <div className={styles.offer_inputs}>
+                            <div className={styles.offer_input_border}>
+                                <input type="text" placeholder='Адрес сайта' className={styles.offer_input} />
+                            </div>
+                            <div className={styles.offer_input_border}>
+                                <input type="text" placeholder='Название компании' className={styles.offer_input} />
+                            </div>
+                            <div className={styles.offer_input_border}>
+                                <input type="text" placeholder='Откуда узнали о нас' className={styles.offer_input} />
+                            </div>
+                            <div className={styles.offer_input_border}>
+                                <input type="text" placeholder='Ваш комментарий ' className={styles.offer_input} />
+                            </div>
+                            <div className={styles.offer_input_border}>
+                                <input type="text" placeholder="Контактное лицо" className={styles.offer_input} />
+                                {/* <span className={styles.highlight}>*</span> */}
+                            </div>
+                            <div className={styles.offer_input_border}>
+                                <input type="text" placeholder='Email' className={styles.offer_input} />
+                                {/* <span className={styles.highlight} >*</span> */}
+                            </div>
+                            <div className={styles.offer_input_border}>
+                                <input type="text" placeholder='Телефон' className={styles.offer_input} />
+                                {/* <span className={styles.highlight} >*</span> */}
+                            </div>
                         </div>
-                        <input type="text" placeholder='Название компании' className={styles.offer_input} />
-                        <input type="text" placeholder='Откуда узнали о нас' className={styles.offer_input} />
-                        <input type="text" placeholder='Ваш комментарий ' className={styles.offer_input} />
-                        <input type="text" placeholder='Контактное лицо' className={styles.offer_input} />
-                        <input type="text" placeholder='Email' className={styles.offer_input} />
-                        <input type="text" placeholder='Телефон' className={styles.offer_input} />
+                        <div className={styles.offer_agg_con}>
+                            <div className={styles.offer_checkbox_style} >
+                                <input className={styles.offer_agg_checkbox} type="checkbox" />
+                            </div>
+                            <p className={styles.offer_agreement} >Согласен с обработкой персональных данных в соответствии с политикой конфиденциальности*</p>
+                        </div>
+                        <button className={styles.offer_btn}>Получить КП</button>
                     </div>
                 </div>
-
             </div>
         </section>
     )

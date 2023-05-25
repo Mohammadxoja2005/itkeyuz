@@ -2,6 +2,7 @@
   width: 100%;
   margin: auto;
   background-color: black;
+  padding: 30px 20px;
 }
 
 .offer_con {
@@ -149,15 +150,6 @@ input[type="range"] {
   border-radius: 5px;
 }
 
-/* Styles for the track */
-// input[type="range"]::-webkit-slider-runnable-track {
-//   width: 100%;
-//   height: 10px;
-//   background-color: #ddd;
-//   border-radius: 5px;
-// }
-
-/* Styles for the thumb (handle) */
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -166,6 +158,12 @@ input[type="range"]::-webkit-slider-thumb {
   background: linear-gradient(to right, #fd0988, #7237bd);
   border-radius: 50%;
   cursor: pointer;
+}
+
+.offer_form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .offer_input {
@@ -180,12 +178,18 @@ input[type="range"]::-webkit-slider-thumb {
   gap: 20px;
   margin-top: 10px;
   max-width: 734px;
+  margin-bottom: 10px;
+}
+
+.offer_inputs_con {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .offer_input {
-  border: 3px solid #7237BD
-  ;
-//   border-image: linear-gradient(to right, #fd0988, #7237bd) 1;
+  border: 3px solid #7237bd;
+  //   border-image: linear-gradient(to right, #fd0988, #7237bd) 1;
   border-image-repeat: no-repeat;
   text-align: center;
   padding: 10px 20px;
@@ -201,9 +205,71 @@ input[type="range"]::-webkit-slider-thumb {
   font-weight: 400;
   font-family: comic-regular;
   text-align: center;
-} 
+}
 
 .offer_input_border {
-    border-radius: 10px;
-    // background-color: white;
+  position: relative;
+  display: flex;
+  // background-color: white;
+}
+
+.highlight {
+  color: red;
+  position: absolute;
+  right: 40%;
+  top: 20%;
+}
+
+.offer_agg_con {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.offer_agg_checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #191c26;
+}
+
+.offer_agg_checkbox:checked {
+  background-color: white;
+}
+
+.offer_checkbox_style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  min-width: 19px;
+  height: 19px;
+  background: linear-gradient(to right, #fd0988, #7237bd);
+}
+
+.offer_agreement {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: comic-regular;
+  color: #fff;
+}
+
+.offer_btn {
+  width: 100%;
+  max-width: 215px;
+  height: 68px;
+  color: white;
+  background: linear-gradient(to right, #fd0988, #7237bd);
+  font-weight: 400;
+  font-size: 28px;
+  font-family: comic-regular;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin: auto;
 }

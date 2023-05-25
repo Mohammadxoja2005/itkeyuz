@@ -1,0 +1,136 @@
+.footer {
+  width: 100%;
+  margin: auto;
+  background-color: black;
+  padding-bottom: 30px;
+}
+
+.footer_con {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1280px;
+  margin: auto;
+  background: #191c26;
+  border-radius: 10px;
+  padding: 46px 25px;
+}
+
+.footer_contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_contact_detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer_contact_detail_icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer_contact_icon_name {
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
+  font-family: comic-regular;
+}
+
+.footer_contact_phone {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: comic-regular;
+  color: #fff;
+}
+
+.footer_add {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_info_title {
+  font-weight: 700;
+  font-size: 18px;
+  font-family: comic-bold;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer_info_con {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer_info_bullet {
+  min-width: 10px;
+  height: 10px;
+  background: linear-gradient(to right, #fd0988, #7237bd);
+  border-radius: 50%;
+}
+
+.footer_info_name_con {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer_info_name {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: comic-regular;
+}
+
+.footer_social {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer_social_rights {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer_social_name_off {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  font-family: comic-bold;
+  margin-bottom: 8px;
+}
+
+.footer_social_name {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  font-family: comic-regular;
+}
+
+.footer_social_media {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer_media {
+  display: flex;
+  gap: 15px;
+}
+
+// .footer_media_img {
+//     width: 11px;
+//     height: 11px;
+// }
+
+.footer_social_document {
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: comic-regular;
+}
