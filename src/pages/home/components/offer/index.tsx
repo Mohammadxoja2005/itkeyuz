@@ -3,10 +3,13 @@ import React, { FC, useState, useEffect } from 'react'
 import styles from "./index.module.scss";
 // data 
 import { offers } from '../../../../data/data';
+// headless ui 
+import { RadioGroup } from '@headlessui/react'
 
 const OFFER: FC = () => {
     const [inputRange, setInputRange] = useState<any>('0');
     const [price, setPrice] = useState<number>(1500000);
+    const [select, setSelect] = useState<string>('1');
 
     useEffect(() => {
         setPrice(((248500000 * inputRange / 100) + 1500000))
@@ -26,16 +29,21 @@ const OFFER: FC = () => {
                         <div className={styles.offer_bullet} ></div>
                         <h2 className={styles.offer_types_name}>Какие виды услуг вас интересуют? <span style={{ color: "red" }} >*</span></h2>
                     </div>
-
-                    <div className={styles.offer_type_con}>
-                        {offers.map((offer) => {
-                            return (
-                                <div key={offer.id} className={styles.offer_choice}>
-                                    {offer.name}
-                                </div>
-                            )
-                        })}
-                    </div>
+                    <RadioGroup value={select} onChange={setSelect}>
+                        <div className={styles.offer_type_con}>
+                            {offers.map((offer) => {
+                                return (
+                                    <RadioGroup.Option
+                                        value={offer.id}
+                                        className={({ checked }) => `${checked ? styles.offer_choice_clicked : styles.offer_choice}`}
+                                        key={offer.id}
+                                    >
+                                        {offer.name}
+                                    </RadioGroup.Option>
+                                )
+                            })}
+                        </div>
+                    </RadioGroup>
                 </div>
 
                 <div className={styles.offer_range}>
