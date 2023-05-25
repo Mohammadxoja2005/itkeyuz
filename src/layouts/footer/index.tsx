@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useState } from 'react'
 // styles
 import styles from "./index.module.scss";
 // icons
@@ -15,6 +15,8 @@ import FACEBOOK from '../../assets/icons/minifacebook.png'
 import { footerData } from '../../data/data';
 
 const FOOTER: FC = () => {
+    const [isClicked, setIsClicked] = useState<number | null>(null);
+
     return (
         <section className={styles.footer}>
             <div className={styles.footer_con}>
@@ -51,23 +53,55 @@ const FOOTER: FC = () => {
 
                 <div className={styles.footer_add}>
                     {footerData.map((service) => {
+                        const isHovered = isClicked === service.id;
+
                         return (
                             <div key={service.id} className={styles.footer_add_info}>
-                                <div className={styles.footer_add_title_con} >
+                                <div className={styles.footer_add_title_con} onClick={() => setIsClicked((prev) =>
+                                    prev === service.id
+                                        ?
+                                        prev = null
+                                        : prev = service.id)}>
                                     <h2 className={styles.footer_info_title}>{service.name}</h2>
-                                    <img src={DOWN} alt="" />
+                                    {isHovered
+                                        ?
+                                        <img src={DOWN} alt="" style={{ rotate: "180deg" }} />
+                                        : <img src={DOWN} alt="" />}
                                 </div>
-                                <div className={styles.footer_info_con}>
-                                    {
-                                        service.list.map((list) => {
-                                            return (
-                                                <div className={styles.footer_info_name_con}>
-                                                    <div className={styles.footer_info_bullet}></div>
-                                                    <h4 className={styles.footer_info_name}>{list.name}</h4>
+
+                                {window.innerWidth > 881 ?
+                                    <div className={styles.footer_info_con}>
+                                        {
+                                            service.list.map((list) => {
+                                                return (
+                                                    <div className={styles.footer_info_name_con}>
+                                                        <div className={styles.footer_info_bullet}></div>
+                                                        <h4 className={styles.footer_info_name}>{list.name}</h4>
+                                                    </div>
+                                                )
+                                            })}
+                                    </div>
+                                    :
+                                    <>
+                                        {
+                                            isHovered
+                                                ?
+                                                <div className={styles.footer_info_con}>
+                                                    {
+                                                        service.list.map((list) => {
+                                                            return (
+                                                                <div className={styles.footer_info_name_con}>
+                                                                    <div className={styles.footer_info_bullet}></div>
+                                                                    <h4 className={styles.footer_info_name}>{list.name}</h4>
+                                                                </div>
+                                                            )
+                                                        })
+                                                    }
                                                 </div>
-                                            )
-                                        })}
-                                </div>
+                                                : null}
+                                    </>
+
+                                }
 
                             </div>
                         )
@@ -100,7 +134,7 @@ const FOOTER: FC = () => {
                 </div>
 
             </div>
-        </section>
+        </section >
     )
 }
 
