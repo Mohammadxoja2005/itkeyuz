@@ -4,12 +4,12 @@ import styles from "./index.module.scss";
 // data 
 import { offers } from '../../../../data/data';
 // headless ui 
-import { RadioGroup } from '@headlessui/react'
+import { RadioGroup } from '@headlessui/react';
 
 const OFFER: FC = () => {
     const [inputRange, setInputRange] = useState<any>('0');
     const [price, setPrice] = useState<number>(1500000);
-    const [select, setSelect] = useState<string>('1');
+    const [select, setSelect] = useState<number>(1);
 
     useEffect(() => {
         setPrice(((248500000 * inputRange / 100) + 1500000))
@@ -24,7 +24,6 @@ const OFFER: FC = () => {
                 </div>
 
                 <div className={styles.offer_types_con}>
-
                     <div className={styles.offer_types_name_con} >
                         <div className={styles.offer_bullet} ></div>
                         <h2 className={styles.offer_types_name}>Какие виды услуг вас интересуют? <span style={{ color: "red" }} >*</span></h2>
@@ -51,7 +50,7 @@ const OFFER: FC = () => {
                     <div className={styles.offer_range_title_con}>
                         <div className={styles.offer_range_name_con}>
                             <div className={styles.offer_bullet} ></div>
-                            <h2 className={styles.offer_range_name}>Бюджет проекта <span style={{ color: "red" }} >*</span></h2>
+                            <h2 className={styles.offer_types_name}>Бюджет проекта <span style={{ color: "red" }} >*</span></h2>
                         </div>
                         <p className={styles.offer_range_des}>Укажите примерную сумму, которую планируется потратить на реализацию проекта</p>
                     </div>
@@ -75,11 +74,11 @@ const OFFER: FC = () => {
                     <div className={styles.offer_range_title_con}>
                         <div className={styles.offer_range_name_con}>
                             <div className={styles.offer_bullet} ></div>
-                            <h2 className={styles.offer_range_name}>Расскажите о вашем проекте</h2>
+                            <h2 className={styles.offer_types_name}>Расскажите о вашем проекте</h2>
                         </div>
                         <p className={styles.offer_range_des}>
                             <span style={{ color: "red" }} >*</span> -
-                            Укажите примерную сумму, которую планируется потратить на реализацию проекта</p>
+                            Поля, обязательные для заполнения</p>
                     </div>
 
                     <div className={styles.offer_inputs_con}>

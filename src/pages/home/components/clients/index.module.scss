@@ -44,3 +44,21 @@
   height: 100%;
   object-fit: contain;
 }
+
+@media screen and (max-width: 768px) {
+  .client_title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .client_title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .client_title {
+    font-size: 16px;
+  }
+}

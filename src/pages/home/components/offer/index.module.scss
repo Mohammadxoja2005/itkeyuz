@@ -278,7 +278,8 @@ input[type="range"]::-webkit-slider-thumb {
 .offer_btn {
   width: 100%;
   max-width: 215px;
-  height: 68px;
+  padding: 20px 0;
+  // height: 68px;
   color: white;
   background: linear-gradient(to right, #fd0988, #7237bd);
   font-weight: 400;
@@ -288,4 +289,153 @@ input[type="range"]::-webkit-slider-thumb {
   border: none;
   cursor: pointer;
   margin: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .offer_choice {
+    font-size: 16px;
+  }
+
+  .offer_choice_clicked {
+    font-size: 16px;
+  }
+
+  .offer_range_price {
+    font-size: 20px;
+  }
+
+  .offer_btn {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .offer_title {
+    font-size: 36px;
+  }
+
+  .offer_des {
+    font-size: 15px;
+  }
+
+  .offer_type_con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .offer_types_name {
+    font-size: 20px;
+  }
+
+  .offer_input {
+    font-size: 16px;
+  }
+
+  .offer_input::placeholder {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .offer_con {
+    gap: 20px;
+  }
+
+  .offer_title {
+    font-size: 24px;
+  }
+
+  .offer_des {
+    font-size: 12px;
+  }
+
+  .offer_types_name {
+    font-size: 16px;
+  }
+
+  .offer_choice {
+    font-size: 12px;
+  }
+
+  .offer_choice_clicked {
+    font-size: 12px;
+  }
+
+  .offer_range_des {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .offer_input {
+    font-size: 12px;
+  }
+
+  .offer_input::placeholder {
+    font-size: 12px;
+  }
+
+  .offer_con {
+    padding: 20px;
+  }
+
+  .offer_agreement {
+    font-size: 12px;
+  }
+
+  .offer_agg_con {
+    margin-bottom: 20px;
+  }
+
+  .offer_btn {
+    font-size: 14px;
+    max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .offer_range_price {
+    font-size: 16px;
+  }
+
+  .offer_inputs {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .offer_title {
+    font-size: 16px;
+  }
+
+  .offer_types_name {
+    font-size: 12px;
+  }
+
+  .offer_choice {
+    font-size: 10px;
+  }
+
+  .offer_choice_clicked {
+    font-size: 10px;
+  }
+
+  .offer_input {
+    font-size: 10px;
+  }
+
+  .offer_input::placeholder {
+    font-size: 10px;
+  }
+
+  .offer_range_price {
+    font-size: 12px;
+  }
+
+  .offer_agreement {
+    font-size: 10px;
+  }
+
+  .offer_btn {
+    font-size: 12px;
+  }
 }

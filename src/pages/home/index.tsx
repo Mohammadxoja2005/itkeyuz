@@ -15,10 +15,10 @@ const HOME: FC = () => {
             {/* <HEADER />
             <BENEFITS /> */}
             {/* <SERVICES /> */}
-            <TEAM />
-            {/* <CLIENT />
+            {/* <TEAM /> */}
+            {/* <CLIENT /> */}
             <OFFER />
-            <FOOTER /> */}
+            {/* <FOOTER /> */}
         </>
     )
 }

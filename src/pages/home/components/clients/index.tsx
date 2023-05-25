@@ -19,6 +19,22 @@ const CLIENT: FC = () => {
                     <Swiper
                         slidesPerView={4.5}
                         spaceBetween={50}
+                        breakpoints={{
+                            992: {
+                                slidesPerView: 4.5
+                            },
+
+                            768: {
+                                slidesPerView: 3.5
+                            },
+                            576: {
+                                slidesPerView: 3.5
+                            },
+                            0: {
+                                spaceBetween:10,
+                                slidesPerView: 2.5
+                            }
+                        }}
                     >
                         {clients.map((client) => {
                             return (
