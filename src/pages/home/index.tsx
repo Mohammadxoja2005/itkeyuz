@@ -14,9 +14,9 @@ const HOME: FC = () => {
         <>
             {/* <HEADER />
             <BENEFITS /> */}
-            <SERVICES />
-            {/* <TEAM />
-            <CLIENT />
+            {/* <SERVICES /> */}
+            <TEAM />
+            {/* <CLIENT />
             <OFFER />
             <FOOTER /> */}
         </>

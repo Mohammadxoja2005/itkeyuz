@@ -15,7 +15,20 @@ const TEAM: FC = () => {
 
                 <div className={styles.team_people}>
                     <Swiper
-                        slidesPerView={4.5}
+                        breakpoints={{
+                            992: {
+                                slidesPerView: 4.5
+                            },
+                            768: {
+                                slidesPerView: 3.5
+                            },
+                            576: {
+                                slidesPerView: 2.5
+                            },
+                            0: {
+                                slidesPerView: 2.5
+                            }
+                        }}
                     >
                         {[1, 2, 3, 4, 5, 6, 7, 8].map((idx) => {
                             return (

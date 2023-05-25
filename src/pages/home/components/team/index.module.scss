@@ -3,6 +3,7 @@
   margin: auto;
   background-color: #191c26;
   padding: 20px 20px;
+  padding-right: 0;
 }
 
 .team_con {
@@ -72,4 +73,64 @@
   font-family: comic-regular;
   font-weight: 400;
   color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .team_title_con {
+    padding-left: 0;
+  }
+
+  .team_title {
+    font-size: 36px;
+  }
+
+  .team_title_des {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .team_person_img {
+    max-width: 130px;
+    height: 120px;
+  }
+
+  .team_person_name {
+    font-size: 15px;
+  }
+
+  .team_person_des {
+    font-size: 12px;
+  } 
+
+  .team_title {
+    font-size: 24px;
+  }
+
+  .team_title_des {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team_person_img {
+    max-width: 80px;
+    height: 80px;
+  }
+
+  .team_person_name {
+    font-size: 12px;
+  }
+
+  .team_person_des {
+    font-size: 10px;
+  } 
+
+  .team_title {
+    font-size: 16px;
+  }
+
+  .team_title_des {
+    font-size: 12px;
+  }
 }
