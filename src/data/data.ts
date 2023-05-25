@@ -16,6 +16,14 @@ import SERVICE6 from "../assets/icons/service6.png";
 import SERVICE7 from "../assets/icons/service7.png";
 import SERVICE8 from "../assets/icons/service8.png";
 
+// client img 
+import CLIENT1 from "../assets/img/client1.png"
+import CLIENT2 from "../assets/img/client2.png"
+import CLIENT3 from "../assets/img/client3.png"
+import CLIENT4 from "../assets/img/client4.png"
+import CLIENT5 from "../assets/img/client5.png"
+import CLIENT6 from "../assets/img/client6.png"
+
 export const benefits: Array<{ id: number, name: string, des: string, icon: string }> = [
     {
         id: 1,
@@ -309,5 +317,32 @@ export const footerData: Array<{ id: number, name: string, list: Array<{ id: num
                 name: "Новости"
             }
         ]
+    }
+]
+
+export const clients: Array<{ id: number, img: string }> = [
+    {
+        id: 1,
+        img: CLIENT1
+    },
+    {
+        id: 2,
+        img: CLIENT2
+    },
+    {
+        id: 3,
+        img: CLIENT3
+    },
+    {
+        id: 4,
+        img: CLIENT4
+    }, 
+    {
+        id: 5,
+        img: CLIENT5
+    }, 
+    {
+        id: 6,
+        img: CLIENT6
     }
 ]

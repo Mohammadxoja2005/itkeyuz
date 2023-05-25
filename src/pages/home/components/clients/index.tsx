@@ -3,6 +3,8 @@ import React, { FC } from 'react'
 import styles from "./index.module.scss";
 // swiper
 import { SwiperSlide, Swiper } from "swiper/react";
+// data
+import { clients } from '../../../../data/data';
 
 const CLIENT: FC = () => {
     return (
@@ -18,11 +20,11 @@ const CLIENT: FC = () => {
                         slidesPerView={4.5}
                         spaceBetween={50}
                     >
-                        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map(() => {
+                        {clients.map((client) => {
                             return (
-                                <SwiperSlide>
+                                <SwiperSlide key={client.id}>
                                     <div className={styles.client_slide}>
-
+                                        <img src={client.img} alt="itkey clients" />
                                     </div>
                                 </SwiperSlide>
                             )
