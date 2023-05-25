@@ -216,6 +216,34 @@ export const services: Array<{ id: number, icon: string, name: string, des: Arra
         ],
         price: 1000000
     },
+    {
+        id: 9,
+        icon: SERVICE8,
+        name: "Имидж сайт",
+        des: [
+            {
+
+                id: 1,
+                bulletPoint: 'Уникальный решения по дизайну'
+            },
+            {
+
+                id: 2,
+                bulletPoint: 'Необычные элементы, подчеркивающие индивидуальность'
+            },
+            {
+
+                id: 3,
+                bulletPoint: 'Оригинальные запоминающиеся элементы вёрстки'
+            },
+            {
+
+                id: 4,
+                bulletPoint: 'Тщательная проработка ассоциаций с Вашим брендом'
+            }
+        ],
+        price: 1000000
+    },
 ]
 
 export const offers: Array<{ id: number, name: string }> = [
@@ -336,13 +364,13 @@ export const clients: Array<{ id: number, img: string }> = [
     {
         id: 4,
         img: CLIENT4
-    }, 
+    },
     {
         id: 5,
         img: CLIENT5
-    }, 
+    },
     {
         id: 6,
         img: CLIENT6
-    }
+    },
 ]

@@ -12,10 +12,10 @@ import FOOTER from '../../layouts/footer';
 const HOME: FC = () => {
     return (
         <>
-            <HEADER />
-            <BENEFITS />
-            {/* <SERVICES />
-            <TEAM />
+            {/* <HEADER />
+            <BENEFITS /> */}
+            <SERVICES />
+            {/* <TEAM />
             <CLIENT />
             <OFFER />
             <FOOTER /> */}

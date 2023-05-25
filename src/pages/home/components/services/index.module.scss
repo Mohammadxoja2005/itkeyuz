@@ -61,6 +61,17 @@
   border-radius: 20px;
 }
 
+.services_list_individual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #16163c;
+  padding: 12px;
+  border-radius: 20px;
+  height: 100%;
+}
+
 .services_list:hover {
   background: linear-gradient(to right, #fd0988, #7237bd);
   transition: all 0.3s;
@@ -136,4 +147,121 @@
   font-family: comic-regular;
   font-size: 18px;
   padding: 5px 10px;
+}
+
+.services_list_individual_name {
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 768px) {
+  .services_title {
+    font-size: 36px;
+  }
+
+  .services_title_des {
+    font-size: 20px;
+  }
+
+  .services_list_con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services_list_name {
+    font-size: 20px;
+  }
+
+  .services_list_des {
+    font-size: 12px;
+  }
+
+  .services_list_btn {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 480px) { 
+
+  .services_title {
+    font-size: 24px;
+  }
+
+  .services_title_des {
+    font-size: 16px;
+    order: 2;
+  } 
+  
+  // .services_line {
+  //   order: 3;
+  // }
+
+  .services_list_name {
+    font-size: 16px;
+  }
+
+  .services_list_des {
+    font-size: 15px;
+  }
+
+  .services_list_btn {
+    font-size: 12px;
+  }
+
+  .services_list_bulletpoints_con {
+    display: none;
+  }
+
+  .services_list_individual {
+    grid-column: 1 / 3;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .services_title {
+    font-size: 16px;
+  }
+
+  .services_title_des {
+    font-size: 12px;
+  }
+
+  .services_list {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services_list_name {
+    text-align: center;
+  }
+
+  .service_list_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services_list_order {
+    align-items: center;
+  }
+
+  .services_list_price {
+    font-size: 15px;
+  }
+
+  .services_list_name {
+    font-size: 12px;
+  }
+
+  .services_list_des {
+    font-size: 10px;
+  }
 }

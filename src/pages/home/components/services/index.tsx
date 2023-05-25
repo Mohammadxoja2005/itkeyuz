@@ -43,9 +43,23 @@ const SERVICES: FC = () => {
 
                             </div>
                         )
-                    })
+                    })}
+                    <div className={styles.services_list_individual}>
+                        <div className={styles.service_list_content}>
+                            <h3 className={styles.services_list_name} style={{ textAlign: "center" }}>Индивидуальные решения</h3>
 
-                    }
+                            <div className={styles.services_list_bulletpoints_con} style={{ display: "block" }}>
+                                <p className={styles.services_list_des} style={{ textAlign: "center" }}>
+                                    Если не получилось ничего выбрать, будем рады персональной заявке и готовы рассчитать индивидуальную стоимость Вашего сайта для расчёта особенного проекта для Вашего бизнеса.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className={styles.services_list_order}>
+                            <div className={styles.services_list_btn}>Заказать</div>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
