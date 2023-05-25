@@ -18,7 +18,7 @@ const HOME: FC = () => {
             <TEAM />
             <CLIENT />
             <OFFER />
-            {/* <FOOTER /> */}
+            <FOOTER />
         </>
     )
 }

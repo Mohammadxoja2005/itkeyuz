@@ -6,6 +6,7 @@ import PHONE from "../../assets/icons/phone.png";
 import PHONECALL from "../../assets/icons/phonecall.png";
 import LOCATION from "../../assets/icons/location.png";
 import LOGOMINI from "../../assets/img/logo.png"
+import DOWN from "../../assets/icons/down.png"
 // images
 import TELEGRAM from '../../assets/icons/minitelegram.png'
 import INSTAGRAM from '../../assets/icons/miniinstagram.png'
@@ -52,8 +53,10 @@ const FOOTER: FC = () => {
                     {footerData.map((service) => {
                         return (
                             <div key={service.id} className={styles.footer_add_info}>
-
-                                <h2 className={styles.footer_info_title}>{service.name}</h2>
+                                <div className={styles.footer_add_title_con} >
+                                    <h2 className={styles.footer_info_title}>{service.name}</h2>
+                                    <img src={DOWN} alt="" />
+                                </div>
                                 <div className={styles.footer_info_con}>
                                     {
                                         service.list.map((list) => {
@@ -74,16 +77,15 @@ const FOOTER: FC = () => {
                 <div className={styles.footer_social}>
                     <div className={styles.footer_social_rights}>
                         <img src={LOGOMINI} alt="itkey logo" />
-                        <div className={styles.footer_social_name_con} >
-                            <p className={styles.footer_social_name_off}>2023 - IT KEY</p>
-                            <p className={styles.footer_social_name}>Сайт защищен reCAPTCHA и Google.</p>
-                            <p className={styles.footer_social_name}>
-                                <a className={styles.footer_social_name} href="#">Конфиденциальность</a>
-                                <span style={{ marginLeft: "4px", marginRight: "4px" }} >и</span>
-                                <a className={styles.footer_social_name} href="#">Условия.</a>
-                            </p>
-                        </div>
-
+                    </div>
+                    <div className={styles.footer_social_name_con} >
+                        <p className={styles.footer_social_name_off}>2023 - IT KEY</p>
+                        <p className={styles.footer_social_name}>Сайт защищен reCAPTCHA и Google.</p>
+                        <p className={styles.footer_social_name}>
+                            <a className={styles.footer_social_name} href="#">Конфиденциальность</a>
+                            <span style={{ marginLeft: "4px", marginRight: "4px" }} >и</span>
+                            <a className={styles.footer_social_name} href="#">Условия.</a>
+                        </p>
                     </div>
 
                     <div className={styles.footer_social_media}>
