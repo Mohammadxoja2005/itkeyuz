@@ -75,3 +75,67 @@
   font-weight: 400;
   font-family: comic-regular;
 }
+
+@media screen and (max-width: 992px) {
+  .benefits_list_title {
+    font-size: 20px;
+  }
+
+  .benefits_list_text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .benefits_title {
+    font-size: 36px;
+  }
+
+  .benefits_list_text {
+    font-size: 12px;
+  }
+
+  .benefits_list_con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .benefits_title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefits_list_title {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .benefits_title {
+    font-size: 16px;
+  }
+
+  .benefits_list_info {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .benefits_list_title {
+    text-align: center;
+  }
+
+  .benefits_list {
+    padding: 10px;
+  }
+
+  .benefits_list_info {
+    margin-bottom: 0;
+  }
+
+  .benefits_list_des {
+    display: none;
+  }
+}

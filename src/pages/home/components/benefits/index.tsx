@@ -6,7 +6,6 @@ import styles from "./index.module.scss";
 import { benefits } from '../../../../data/data';
 
 const BENEFITS: FC = () => {
-
     return (
         <section className={styles.benefits}>
             <div className={styles.benefits_container}>

@@ -14,6 +14,11 @@
   margin: auto;
 }
 
+.header_logo {
+  // width: 120px;
+  // object-fit: contain;
+}
+
 .header_navbar {
   display: flex;
   justify-content: space-between;
@@ -97,4 +102,60 @@
   font-family: comic-regular;
   color: white;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .header_logo {
+    width: 50px;
+  }
+
+  .header_content_title {
+    font-size: 48px;
+  }
+
+  .header_content_des {
+    font-size: 20px;
+  }
+
+  .header_burger_before {
+    width: 20px;
+  }
+
+  .header_burger_main {
+    width: 30px;
+  }
+
+  .header_burger_after {
+    width: 20px;
+  }
+
+  .header_logo {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header_logo {
+    width: 50px;
+  }
+
+  .header_content_title {
+    font-size: 32px;
+  }
+
+  .header_content_des {
+    font-size: 15px;
+  }
+
+  .header_burger_before {
+    width: 15px;
+  }
+
+  .header_burger_main {
+    width: 20px;
+  }
+
+  .header_burger_after {
+    width: 15px;
+  }
 }
