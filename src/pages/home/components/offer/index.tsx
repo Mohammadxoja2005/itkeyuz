@@ -37,7 +37,9 @@ const OFFER: FC = () => {
                                         className={({ checked }) => `${checked ? styles.offer_choice_clicked : styles.offer_choice}`}
                                         key={offer.id}
                                     >
-                                        {offer.name}
+                                        <div>
+                                            {offer.name}
+                                        </div>
                                     </RadioGroup.Option>
                                 )
                             })}

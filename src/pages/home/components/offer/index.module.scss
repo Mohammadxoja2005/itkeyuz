@@ -75,7 +75,6 @@
   color: white;
   font-size: 20px;
   font-weight: 400;
-  //   background: linear-gradient(to right, #fd0988, #7237bd);
   border: 2px solid #fff;
   display: flex;
   justify-content: center;
@@ -127,7 +126,7 @@
 }
 
 .offer_range_des {
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   font-weight: 400;
   font-family: comic-regular;
@@ -279,7 +278,6 @@ input[type="range"]::-webkit-slider-thumb {
   width: 100%;
   max-width: 215px;
   padding: 20px 0;
-  // height: 68px;
   color: white;
   background: linear-gradient(to right, #fd0988, #7237bd);
   font-weight: 400;
@@ -291,7 +289,18 @@ input[type="range"]::-webkit-slider-thumb {
   margin: auto;
 }
 
-@media screen and (max-width: 992px) {
+// @media screen and (max-width: 992px) {
+// }
+
+@media screen and (max-width: 768px) {
+  .offer_title {
+    font-size: 36px;
+  }
+
+  .offer_des {
+    font-size: 15px;
+  }
+
   .offer_choice {
     font-size: 16px;
   }
@@ -306,16 +315,6 @@ input[type="range"]::-webkit-slider-thumb {
 
   .offer_btn {
     font-size: 24px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .offer_title {
-    font-size: 36px;
-  }
-
-  .offer_des {
-    font-size: 15px;
   }
 
   .offer_type_con {
@@ -345,34 +344,27 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 24px;
   }
 
-  .offer_des {
-    font-size: 12px;
-  }
-
   .offer_types_name {
     font-size: 16px;
   }
 
-  .offer_choice {
-    font-size: 12px;
-  }
-
-  .offer_choice_clicked {
-    font-size: 12px;
+  .offer_type_con {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
   .offer_range_des {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 10px;
   }
 
-  .offer_input {
-    font-size: 12px;
-  }
+  // .offer_input {
+  //   font-size: 12px;
+  // }
 
-  .offer_input::placeholder {
-    font-size: 12px;
-  }
+  // .offer_input::placeholder {
+  //   font-size: 12px;
+  // }
 
   .offer_con {
     padding: 20px;
@@ -393,42 +385,51 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 @media screen and (max-width: 480px) {
-  .offer_range_price {
-    font-size: 16px;
+  .offer_inputs {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .offer_inputs {
-    gap: 10px;
+    width: 100%;
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 382px) {
+  .offer_inputs {
+    grid-template-columns: 1fr;
+  }
+
   .offer_title {
     font-size: 16px;
   }
 
   .offer_types_name {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .offer_choice {
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .offer_choice_clicked {
-    font-size: 10px;
+    font-size: 14px;
+  }
+
+  .offer_des {
+    font-size: 14px;
   }
 
   .offer_input {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .offer_input::placeholder {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .offer_range_price {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .offer_agreement {
