@@ -108,16 +108,13 @@
 }
 
 @media screen and (max-width: 480px) {
-  .benefits_list_title {
-    font-size: 12px;
-  }
-
   .benefits_list_info {
     align-items: center;
     justify-content: center;
   }
 
   .benefits_list_title {
+    font-size: 16px;
     text-align: center;
   }
 
@@ -137,5 +134,9 @@
 @media screen and (max-width: 360px) {
   .benefits_title {
     font-size: 16px;
+  }
+
+  .benefits_list_title {
+    font-size: 12px;
   }
 }
