@@ -27,7 +27,7 @@
 }
 
 .services_title_des {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   font-family: comic-regular;
   max-width: 550px;
@@ -185,8 +185,7 @@
 @media screen and (max-width: 576px) {
 }
 
-@media screen and (max-width: 480px) { 
-
+@media screen and (max-width: 480px) {
   .services_title {
     font-size: 24px;
   }
@@ -194,11 +193,7 @@
   .services_title_des {
     font-size: 16px;
     order: 2;
-  } 
-  
-  // .services_line {
-  //   order: 3;
-  // }
+  }
 
   .services_list_name {
     font-size: 16px;
