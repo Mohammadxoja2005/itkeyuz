@@ -1,14 +1,14 @@
 .team {
   width: 100%;
   margin: auto;
-  background-color: #191c26;
+  background-color: #000;
   padding: 20px 20px;
   padding-right: 0;
 }
 
 .team_con {
   width: 100%;
-  max-width: 1280px;
+  // max-width: 4320px;
   margin: auto;
 }
 
@@ -33,7 +33,7 @@
   font-family: comic-regular;
   color: white;
   max-width: 600px;
-  line-height: 15px;
+  line-height: 20px;
 }
 
 // .team_people {
@@ -117,7 +117,6 @@
     max-width: 80px;
     height: 80px;
   }
-
 
   // .team_title {
   //   font-size: 16px;
