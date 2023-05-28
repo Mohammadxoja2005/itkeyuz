@@ -1,13 +1,15 @@
 .header {
   // max-width: 1440px;
   margin: auto;
-  background-image: url("../../assets/img/background.png");
+  // background-image: url("../../assets/img/background.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   // min-height: 100vh;
   padding: 0 20px;
   width: 100%;
+  position: relative;
+  // z-index: 999;
 }
 
 .header_container {
