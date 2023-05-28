@@ -8,10 +8,12 @@ import TEAM from './components/team';
 import CLIENT from './components/clients';
 import OFFER from './components/offer';
 import FOOTER from '../../layouts/footer';
+import MODAL from '../../layouts/modal';
 
 const HOME: FC = () => {
     return (
         <>
+            <MODAL />
             <HEADER />
             <BENEFITS />
             <SERVICES />

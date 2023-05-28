@@ -1,0 +1,109 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 415px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  border: 2px solid #7237bd;
+  border-radius: 15px;
+  backdrop-filter: blur(25px);
+  z-index: 998;
+}
+
+.modal_title {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: comic-bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.modal_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.modal_input {
+  border: 3px solid #7237bd;
+  //   border-image: linear-gradient(to right, #fd0988, #7237bd) 1;
+  border-image-repeat: no-repeat;
+  text-align: center;
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: comic-regular;
+}
+
+.modal_input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: comic-regular;
+  text-align: center;
+}
+
+.modal_agg_con {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.modal_agg_checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #191c26;
+}
+
+.modal_agg_checkbox:checked {
+  background-image: url("../../assets/icons/checked.png");
+
+  .modal_agg_checkbox {
+    background-color: transparent;
+  }
+}
+
+.modal_checkbox_style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  min-width: 19px;
+  height: 19px;
+  background: linear-gradient(to right, #fd0988, #7237bd);
+}
+
+.modal_agreement {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: comic-regular;
+  color: #fff;
+}
+
+.modal_btn {
+  width: 100%;
+  max-width: 145px;
+  padding: 5px 10px;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: comic-regular;
+  cursor: pointer;
+  background: linear-gradient(to right, #fd0988, #7237bd);
+  outline: none;
+  border: none;
+  margin: auto;
+  border-radius: 10px;
+}

@@ -3,8 +3,15 @@ import React, { FC } from 'react'
 import styles from "./index.module.scss";
 // data 
 import { services } from '../../../../data/data';
+// jotai
+import { useAtom } from "jotai";
+import { useOpenModal } from '../../../../hooks/useOpenModal';
 
 const SERVICES: FC = () => {
+    const [isOpen, setIsOpen] = useAtom(useOpenModal);
+
+    console.log(isOpen);
+
     return (
         <section className={styles.services} >
             <div className={styles.services_con}>
@@ -38,7 +45,7 @@ const SERVICES: FC = () => {
 
                                 <div className={styles.services_list_order}>
                                     <h4 className={styles.services_list_price}>от {service.price} сум</h4>
-                                    <div className={styles.services_list_btn}>Заказать</div>
+                                    <div onClick={() => setIsOpen(true)} className={styles.services_list_btn}>Заказать</div>
                                 </div>
 
                             </div>

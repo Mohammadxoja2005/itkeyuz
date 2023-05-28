@@ -13,6 +13,8 @@ import INSTAGRAM from '../../assets/icons/miniinstagram.png'
 import FACEBOOK from '../../assets/icons/minifacebook.png'
 // data  
 import { footerData } from '../../data/data';
+// axios 
+import axios from "axios";
 
 const FOOTER: FC = () => {
     const [isClicked, setIsClicked] = useState<number | null>(null);
