@@ -27,6 +27,13 @@
   font-family: comic-bold;
 }
 
+.team_line {
+  width: 100%;
+  max-width: 346px;
+  height: 3px;
+  background: linear-gradient(to right, #fd0988, #7237bd);
+}
+
 .team_title_des {
   font-size: 20px;
   font-weight: 400;
