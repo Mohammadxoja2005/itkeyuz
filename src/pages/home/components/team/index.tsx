@@ -9,7 +9,7 @@ const TEAM: FC = () => {
         <section className={styles.team}>
             <div className={styles.team_con}>
                 <div className={styles.team_title_con}>
-                    <h2 className={styles.team_title}>Наша команда</h2> 
+                    <h2 className={styles.team_title}>Наша команда</h2>
                     <div className={styles.team_line}></div>
                     <p className={styles.team_title_des}>Мы – команда профессионалов, которые рады проектам любой сложности благодаря опыту и постоянному развитию. Давайте знакомиться!</p>
                 </div>

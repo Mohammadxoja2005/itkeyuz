@@ -47,32 +47,32 @@ const OFFER: FC = () => {
                     </RadioGroup>
                 </div>
 
-                <div className={styles.offer_range}>
-
-                    <div className={styles.offer_range_title_con}>
-                        <div className={styles.offer_range_name_con}>
-                            <div className={styles.offer_bullet} ></div>
-                            <h2 className={styles.offer_types_name}>Бюджет проекта <span style={{ color: "red" }} >*</span></h2>
-                        </div>
-                        <p className={styles.offer_range_des}>Укажите примерную сумму, которую планируется потратить на реализацию проекта</p>
-                    </div>
-
-                    <div className={styles.offer_range_input_con}>
-                        <div className={styles.offer_range_price_con} >
-                            <p className={styles.offer_range_price}>
-                                {price}
-                            </p>
-                            <p className={styles.offer_range_price}>
-                                - 250 000 000
-                            </p>
-                        </div>
-                        <input className={styles.offer_range_input} onChange={(e) => setInputRange(e.target.value)} value={inputRange} type="range" />
-                    </div>
-
-
-                </div>
 
                 <div className={styles.offer_form}>
+                    <div className={styles.offer_range}>
+
+                        <div className={styles.offer_range_title_con}>
+                            <div className={styles.offer_range_name_con}>
+                                <div className={styles.offer_bullet} ></div>
+                                <h2 className={styles.offer_types_name}>Бюджет проекта <span style={{ color: "red" }} >*</span></h2>
+                            </div>
+                            <p className={styles.offer_range_des}>Укажите примерную сумму, которую планируется потратить на реализацию проекта</p>
+                        </div>
+
+                        <div className={styles.offer_range_input_con}>
+                            <div className={styles.offer_range_price_con} >
+                                <p className={styles.offer_range_price}>
+                                    {price}
+                                </p>
+                                <p className={styles.offer_range_price}>
+                                    - 250 000 000
+                                </p>
+                            </div>
+                            <input className={styles.offer_range_input} onChange={(e) => setInputRange(e.target.value)} value={inputRange} type="range" />
+                        </div>
+
+
+                    </div>
                     <div className={styles.offer_range_title_con}>
                         <div className={styles.offer_range_name_con}>
                             <div className={styles.offer_bullet} ></div>
@@ -85,29 +85,26 @@ const OFFER: FC = () => {
 
                     <div className={styles.offer_inputs_con}>
                         <div className={styles.offer_inputs}>
-                            <div className={styles.offer_input_border}>
+                            {/* <div className={styles.offer_input_border}>
                                 <input type="text" placeholder='Адрес сайта' className={styles.offer_input} />
-                            </div>
-                            <div className={styles.offer_input_border}>
+                            </div> */}
+                            {/* <div className={styles.offer_input_border}>
                                 <input type="text" placeholder='Название компании' className={styles.offer_input} />
-                            </div>
-                            <div className={styles.offer_input_border}>
+                            </div> */}
+                            {/* <div className={styles.offer_input_border}>
                                 <input type="text" placeholder='Откуда узнали о нас' className={styles.offer_input} />
-                            </div>
-                            <div className={styles.offer_input_border}>
+                            </div> */}
+                            {/* <div className={styles.offer_input_border}>
                                 <input type="text" placeholder='Ваш комментарий ' className={styles.offer_input} />
-                            </div>
+                            </div> */}
                             <div className={styles.offer_input_border}>
                                 <input type="text" placeholder="Контактное лицо" className={styles.offer_input} />
-                                {/* <span className={styles.highlight}>*</span> */}
                             </div>
-                            <div className={styles.offer_input_border}>
+                            {/* <div className={styles.offer_input_border}>
                                 <input type="text" placeholder='Email' className={styles.offer_input} />
-                                {/* <span className={styles.highlight} >*</span> */}
-                            </div>
+                            </div> */}
                             <div className={styles.offer_input_border}>
                                 <input type="text" placeholder='Телефон' className={styles.offer_input} />
-                                {/* <span className={styles.highlight} >*</span> */}
                             </div>
                         </div>
                         <div className={styles.offer_agg_con}>
