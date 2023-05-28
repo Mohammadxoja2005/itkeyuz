@@ -27,7 +27,6 @@ const MODAL: FC = () => {
 
         setTimeout(() => {
             setIsOpen(true);
-            setNextSchedule(true);
         }, 10000)
 
         if (nextSchedule == true && isOpen == false) {
@@ -39,21 +38,19 @@ const MODAL: FC = () => {
 
     }, [nextSchedule])
 
-
     const notify = () => toast("Форма успешна отправлена");
 
     const onSubmit = (e: any) => {
         e.preventDefault();
 
+        setNextSchedule(false);
+
         axios.post('https://super-duper-octo-broccoli-production.up.railway.app/create', { name, phone })
             .then((response) => {
-                console.log(response);
+                setIsOpen(false);
             })
             .then(() => {
                 notify()
-            })
-            .then(() => {
-                setIsOpen(false);
             })
     }
 
