@@ -15,12 +15,30 @@ const MODAL: FC = () => {
     const [isOpen, setIsOpen] = useAtom(useOpenModal);
     const [name, setName] = useState<string>('');
     const [phone, setPhone] = useState<string>('');
+    const [nextSchedule, setNextSchedule] = useState<boolean>(false);
+    const schedule = [1000, 3000];
 
     useEffect(() => {
+        // for (let i = 0; i < schedule.length; ++i) {
+        //     setTimeout(() => {
+        //         setIsOpen(true);
+        //     }, schedule[i])
+        // } 
+
         setTimeout(() => {
             setIsOpen(true);
+            setNextSchedule(true);
         }, 10000)
-    }, [])
+
+        if (nextSchedule == true && isOpen == false) {
+            setTimeout(() => {
+                setIsOpen(true);
+                setNextSchedule(false);
+            }, 30000)
+        }
+
+    }, [nextSchedule])
+
 
     const notify = () => toast("Форма успешна отправлена");
 
