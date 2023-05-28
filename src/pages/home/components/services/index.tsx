@@ -24,7 +24,7 @@ const SERVICES: FC = () => {
                 <div className={styles.services_list_con}>
                     {services.map((service) => {
                         return (
-                            <div key={service.id} className={styles.services_list}>
+                            <div key={service.id} onClick={() => setIsOpen(true)} className={styles.services_list}>
                                 <div className={styles.service_list_content}>
                                     <img className={styles.services_list_icon} src={service.icon} alt="itkey service icon" />
                                     <h3 className={styles.services_list_name}>{service.name}</h3>
@@ -45,7 +45,7 @@ const SERVICES: FC = () => {
 
                                 <div className={styles.services_list_order}>
                                     <h4 className={styles.services_list_price}>от {service.price} сум</h4>
-                                    <div onClick={() => setIsOpen(true)} className={styles.services_list_btn}>Заказать</div>
+                                    <div className={styles.services_list_btn}>Заказать</div>
                                 </div>
 
                             </div>

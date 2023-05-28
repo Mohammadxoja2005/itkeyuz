@@ -46,6 +46,11 @@
   border-radius: 20px;
 }
 
+.benefits_list:hover {
+  background: linear-gradient(to right, #fd0988, #7237bd);
+  cursor: pointer;
+}
+
 .benefits_list_info {
   display: flex;
   flex-direction: column;
