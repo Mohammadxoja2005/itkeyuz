@@ -16,11 +16,12 @@ const MODAL: FC = () => {
     const [name, setName] = useState<string>('');
     const [phone, setPhone] = useState<string>('');
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setIsOpen(true);
-    //     }, 5000)
-    // }, [])  
+    useEffect(() => {
+        setTimeout(() => {
+            setIsOpen(true);
+        }, 10000)
+    }, [])
+
     const notify = () => toast("Форма успешна отправлена");
 
     const onSubmit = (e: any) => {
