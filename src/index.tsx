@@ -4,7 +4,8 @@ import './index.scss';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider } from "react-router-dom";
 import { routes } from './routes/routes';
-import 'swiper/css'; 
+import 'swiper/css';  
+import 'react-toastify/dist/ReactToastify.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
