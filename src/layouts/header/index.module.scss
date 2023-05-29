@@ -61,8 +61,6 @@
 
 .header_content {
   display: flex;
-  position: relative;
-  z-index: 1;
 }
 
 .header_content_social_con {
@@ -70,6 +68,8 @@
   flex-direction: column;
   align-items: center;
   gap: 45px;
+  z-index: 2;
+  position: relative;
 }
 
 .header_social {
@@ -94,6 +94,8 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
+  position: relative;
+  z-index: 2;
 }
 
 .header_content_title {
