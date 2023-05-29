@@ -20,13 +20,18 @@ const MODAL: FC = () => {
     const [phone, setPhone] = useState<string>('');
     const [nextSchedule, setNextSchedule] = useState<boolean>(false);
     const schedule = [1000, 3000];
+    const isModalOpen = localStorage.getItem('isModalOpen');
 
     useEffect(() => {
         // for (let i = 0; i < schedule.length; ++i) {
         //     setTimeout(() => {
         //         setIsOpen(true);
         //     }, schedule[i])
-        // } 
+        // }  
+
+        if (isModalOpen == '0') {
+            return;
+        }
 
         setTimeout(() => {
             setIsOpen(true);

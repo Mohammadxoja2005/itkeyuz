@@ -9,6 +9,8 @@ const NOTIFICATION: FC = () => {
     const navigate = useNavigate();
     const [seconds, setSeconds] = useState(3);
 
+    localStorage.setItem('isModalOpen', '0');
+
     useEffect(() => {
         ReactGA.pageview(window.location.pathname);
     }, [])
