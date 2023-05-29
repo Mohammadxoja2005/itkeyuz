@@ -9,8 +9,11 @@ import { RadioGroup } from '@headlessui/react';
 import { ToastContainer, toast } from 'react-toastify';
 // axios
 import axios from "axios";
+// react-router-dom
+import { useNavigate } from 'react-router-dom';
 
 const OFFER: FC = () => {
+    const navigate = useNavigate();
     const [inputRange, setInputRange] = useState<any>('0');
     const [price, setPrice] = useState<number>(1500000);
     const [select, setSelect] = useState<number>(1);
@@ -29,6 +32,8 @@ const OFFER: FC = () => {
         axios.post('https://backend-itkey.doon.uz/create', { name, phone })
             .then((response) => {
                 notify()
+            }).then(() => {
+                navigate('/notification')
             })
     }
 
