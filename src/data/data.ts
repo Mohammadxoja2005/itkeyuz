@@ -68,7 +68,7 @@ export const services: Array<{ id: number, icon: string, name: string, des: Arra
     {
         id: 1,
         icon: SERVICE1,
-        name: "Внедрение CRM систем",
+        name: "Внедрение AMOCRM систем",
         des: [
             {
 
