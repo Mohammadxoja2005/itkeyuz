@@ -44,6 +44,7 @@ const MODAL: FC = () => {
         e.preventDefault();
 
         setNextSchedule(false);
+        setIsOpen(false);
 
         axios.post('https://itkey-backend-contact.onrender.com/create', { name, phone })
             .then((response) => {
