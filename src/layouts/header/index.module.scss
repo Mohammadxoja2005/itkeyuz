@@ -25,6 +25,8 @@
 }
 
 .header_navbar {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,6 +61,8 @@
 
 .header_content {
   display: flex;
+  position: relative;
+  z-index: 1;
 }
 
 .header_content_social_con {
