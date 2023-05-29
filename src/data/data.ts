@@ -29,6 +29,7 @@ import TEAM3 from "../assets/img/team3.jpg";
 import TEAM4 from "../assets/img/team4.jpg";
 import TEAM5 from "../assets/img/team5.jpg";
 import TEAM6 from "../assets/img/team6.jpg";
+import TEAM7 from "../assets/img/team7.jpg";
 
 export const benefits: Array<{ id: number, name: string, des: string, icon: string }> = [
     {
@@ -275,18 +276,24 @@ export const team: Array<{ id: number, name: string, img: string, profession: st
         img: TEAM4,
         name: "Наталия",
         profession: "CEO"
-    }, 
+    },
     {
         id: 5,
         img: TEAM5,
         name: "Амалия",
         profession: "Офис Менеджер"
-    }, 
+    },
     {
         id: 6,
         img: TEAM6,
         name: "Абдурауф",
         profession: "Менеджер По Продажам"
+    },
+    {
+        id: 6,
+        img: TEAM7,
+        name: "Нодир",
+        profession: "Финансовый Директор"
     },
 ]
 
