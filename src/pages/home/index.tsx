@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC, useEffect } from 'react';
 import styles from "./index.module.scss";
 
 import HEADER from '../../layouts/header';
@@ -11,8 +11,15 @@ import FOOTER from '../../layouts/footer';
 import MODAL from '../../layouts/modal';
 // react-helmet
 import { Helmet, HelmetProvider } from "react-helmet-async";
+// google analytics
+import ReactGA from 'react-ga';
 
 const HOME: FC = () => {
+
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname);
+    }, [])
+
     return (
         <>
             <HelmetProvider>
