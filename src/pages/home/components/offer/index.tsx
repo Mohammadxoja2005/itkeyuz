@@ -5,15 +5,32 @@ import styles from "./index.module.scss";
 import { offers } from '../../../../data/data';
 // headless ui 
 import { RadioGroup } from '@headlessui/react';
+// react-toastify 
+import { ToastContainer, toast } from 'react-toastify';
+// axios
+import axios from "axios";
 
 const OFFER: FC = () => {
     const [inputRange, setInputRange] = useState<any>('0');
     const [price, setPrice] = useState<number>(1500000);
     const [select, setSelect] = useState<number>(1);
+    const [name, setName] = useState<string>('');
+    const [phone, setPhone] = useState<string>('');
 
     useEffect(() => {
         setPrice(((248500000 * inputRange / 100) + 1500000))
     }, [inputRange])
+
+    const notify = () => toast("Форма успешна отправлена");
+
+    const onSubmit = (e: any) => {
+        e.preventDefault();
+
+        axios.post('https://super-duper-octo-broccoli-production.up.railway.app/create', { name, phone })
+            .then((response) => {
+                notify()
+            })
+    }
 
     return (
         <section className={styles.offer}>
@@ -98,13 +115,13 @@ const OFFER: FC = () => {
                                 <input type="text" placeholder='Ваш комментарий ' className={styles.offer_input} />
                             </div> */}
                             <div className={styles.offer_input_border}>
-                                <input type="text" placeholder="Контактное лицо" className={styles.offer_input} />
+                                <input onChange={(e) => setName(e.target.value)} type="text" placeholder="Контактное лицо" className={styles.offer_input} />
                             </div>
                             {/* <div className={styles.offer_input_border}>
                                 <input type="text" placeholder='Email' className={styles.offer_input} />
                             </div> */}
                             <div className={styles.offer_input_border}>
-                                <input type="text" placeholder='Телефон' className={styles.offer_input} />
+                                <input onChange={(e) => setPhone(e.target.value)} type="text" placeholder='Телефон' className={styles.offer_input} />
                             </div>
                         </div>
                         <div className={styles.offer_agg_con}>
@@ -113,7 +130,7 @@ const OFFER: FC = () => {
                             </div>
                             <p className={styles.offer_agreement} >Согласен с обработкой персональных данных в соответствии с политикой конфиденциальности*</p>
                         </div>
-                        <button className={styles.offer_btn}>Получить КП</button>
+                        <button onClick={onSubmit} className={styles.offer_btn}>Получить КП</button>
                     </div>
                 </div>
             </div>

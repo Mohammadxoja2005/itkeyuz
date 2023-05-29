@@ -58,7 +58,6 @@ const HEADER = () => {
                                 <p className={styles.header_social_scroll}>scroll</p>
                                 <img src={ARROW} alt="arrowdown" />
                             </div>
-
                         </div>
 
                         <div className={styles.header_content_info}>
