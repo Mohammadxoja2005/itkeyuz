@@ -126,9 +126,9 @@ const FOOTER: FC = () => {
 
                     <div className={styles.footer_social_media}>
                         <div className={styles.footer_media}>
-                            <a href="#"><img className={styles.footer_media_img} src={TELEGRAM} alt="telegram" /></a>
-                            <a href="#"><img className={styles.footer_media_img} src={INSTAGRAM} alt="instagram" /></a>
-                            <a href="#"><img className={styles.footer_media_img} src={FACEBOOK} alt="facebook" /></a>
+                            <a target='_blank' href="https://t.me/ITKEYUZB"><img className={styles.footer_media_img} src={TELEGRAM} alt="telegram" /></a>
+                            <a target='_blank' href="https://instagram.com/itkeysofttech?igshid=MzRlODBiNWFlZA=="><img className={styles.footer_media_img} src={INSTAGRAM} alt="instagram" /></a>
+                            <a target='_blank' href="https://www.facebook.com/ITKEYUZ?mibextid=LQQJ4d"><img className={styles.footer_media_img} src={FACEBOOK} alt="facebook" /></a>
                         </div>
                         <a className={styles.footer_social_document} href="#">Публичная оферта</a>
                         <a className={styles.footer_social_document} href="#">Политика конфиденциальности</a>
