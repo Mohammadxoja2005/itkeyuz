@@ -3,6 +3,8 @@ import React, { FC } from 'react'
 import styles from "./index.module.scss";
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
+// team
+import { team } from '../../../../data/data';
 
 const TEAM: FC = () => {
     return (
@@ -31,15 +33,15 @@ const TEAM: FC = () => {
                             }
                         }}
                     >
-                        {[1, 2, 3, 4, 5, 6, 7, 8].map((idx) => {
+                        {team.map((member) => {
                             return (
                                 <SwiperSlide>
-                                    <div key={idx} className={styles.team_person}>
+                                    <div key={member.id} className={styles.team_person}>
                                         <div className={styles.team_person_img}>
-                                            <img src="" alt="" />
+                                            <img src={member.img} alt="" />
                                         </div>
-                                        <h3 className={styles.team_person_name}>Суперпупер Офигетьктото</h3>
-                                        <p className={styles.team_person_des}>Супергерой</p>
+                                        <h3 className={styles.team_person_name}>{member.name}</h3>
+                                        <p className={styles.team_person_des}>{member.profession}</p>
                                     </div>
                                 </SwiperSlide>
                             )

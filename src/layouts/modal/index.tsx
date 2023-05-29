@@ -46,7 +46,7 @@ const MODAL: FC = () => {
         setNextSchedule(false);
         setIsOpen(false);
 
-        axios.post('https://itkey-backend-contact.onrender.com/create', { name, phone })
+        axios.post('http://95.130.227.39:3004/create', { name, phone })
             .then((response) => {
                 setIsOpen(false);
             })

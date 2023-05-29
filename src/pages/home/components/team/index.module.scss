@@ -59,11 +59,18 @@
   width: 165px;
   height: 143px;
   border: 5px solid #ffffff;
-  background-color: black;
+  background-color: white;
   border-radius: 139px 38px 200px 174px;
   -moz-border-radius: 139px 38px 200px 174px;
   -webkit-border-radius: 139px 38px 200px 174px;
   border: 5px solid #fff;
+  overflow: hidden;
+}
+
+.team_person_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .team_person_name {

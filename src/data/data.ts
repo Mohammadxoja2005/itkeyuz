@@ -22,6 +22,13 @@ import CLIENT3 from "../assets/img/client3.png"
 import CLIENT4 from "../assets/img/client4.png"
 import CLIENT5 from "../assets/img/client5.png"
 import CLIENT6 from "../assets/img/client6.png"
+// team img
+import TEAM1 from "../assets/img/team1.jpg";
+import TEAM2 from "../assets/img/team2.jpg";
+import TEAM3 from "../assets/img/team3.jpg";
+import TEAM4 from "../assets/img/team4.jpg";
+import TEAM5 from "../assets/img/team5.jpg";
+import TEAM6 from "../assets/img/team6.jpg";
 
 export const benefits: Array<{ id: number, name: string, des: string, icon: string }> = [
     {
@@ -241,6 +248,45 @@ export const services: Array<{ id: number, icon: string, name: string, des: Arra
             }
         ],
         price: 1000000
+    },
+]
+
+export const team: Array<{ id: number, name: string, img: string, profession: string }> = [
+    {
+        id: 1,
+        img: TEAM1,
+        name: "Алишер",
+        profession: "Коммерческий Директор"
+    },
+    {
+        id: 2,
+        img: TEAM2,
+        name: "Магомед",
+        profession: "Web Designer"
+    },
+    {
+        id: 3,
+        img: TEAM3,
+        name: "Евгений",
+        profession: "Senior Backend Developer"
+    },
+    {
+        id: 4,
+        img: TEAM4,
+        name: "Наталия",
+        profession: "CEO"
+    }, 
+    {
+        id: 5,
+        img: TEAM5,
+        name: "Амалия",
+        profession: "Офис Менеджер"
+    }, 
+    {
+        id: 6,
+        img: TEAM6,
+        name: "Абдурауф",
+        profession: "Менеджер По Продажам"
     },
 ]
 
