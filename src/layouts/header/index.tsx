@@ -10,7 +10,6 @@ import ARROW from "../../assets/icons/arrow.png"
 // video
 import BACKGROUNDVIDEO from './backgroundVideo';
 
-
 const HEADER = () => {
 
     useEffect(() => {

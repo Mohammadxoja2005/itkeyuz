@@ -26,7 +26,7 @@ const OFFER: FC = () => {
     const onSubmit = (e: any) => {
         e.preventDefault();
 
-        axios.post('http://95.130.227.39:3004/create', { name, phone })
+        axios.post('https://backend-itkey.doon.uz/create', { name, phone })
             .then((response) => {
                 notify()
             })
