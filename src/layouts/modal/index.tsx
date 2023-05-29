@@ -1,6 +1,8 @@
 import React, { FC, useState, Fragment, useEffect } from 'react'
 // styles
 import styles from "./index.module.scss";
+// react-router-dom
+import { useNavigate } from 'react-router-dom';
 // headlessui 
 import { Dialog, Transition } from '@headlessui/react'
 // jotai
@@ -12,6 +14,7 @@ import axios from "axios";
 import { ToastContainer, toast } from 'react-toastify';
 
 const MODAL: FC = () => {
+    const navigate = useNavigate();
     const [isOpen, setIsOpen] = useAtom(useOpenModal);
     const [name, setName] = useState<string>('');
     const [phone, setPhone] = useState<string>('');
@@ -52,6 +55,9 @@ const MODAL: FC = () => {
             })
             .then(() => {
                 notify()
+            })
+            .then(() => {
+                navigate('/notification')
             })
     }
 
