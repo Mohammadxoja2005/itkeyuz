@@ -26,7 +26,7 @@ const OFFER: FC = () => {
     const onSubmit = (e: any) => {
         e.preventDefault();
 
-        axios.post('https://super-duper-octo-broccoli-production.up.railway.app/create', { name, phone })
+        axios.post('https://itkey-backend-contact.onrender.com/create', { name, phone })
             .then((response) => {
                 notify()
             })
