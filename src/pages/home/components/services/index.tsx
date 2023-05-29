@@ -10,8 +10,6 @@ import { useOpenModal } from '../../../../hooks/useOpenModal';
 const SERVICES: FC = () => {
     const [isOpen, setIsOpen] = useAtom(useOpenModal);
 
-    console.log(isOpen);
-
     return (
         <section className={styles.services} >
             <div className={styles.services_con}>
@@ -63,7 +61,7 @@ const SERVICES: FC = () => {
                         </div>
 
                         <div className={styles.services_list_order}>
-                            <div className={styles.services_list_btn}>Заказать</div>
+                            <div onClick={() => setIsOpen(true)} className={styles.services_list_btn}>Заказать</div>
                         </div>
 
                     </div>
