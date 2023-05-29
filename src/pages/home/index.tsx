@@ -9,18 +9,28 @@ import CLIENT from './components/clients';
 import OFFER from './components/offer';
 import FOOTER from '../../layouts/footer';
 import MODAL from '../../layouts/modal';
+// react-helmet
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const HOME: FC = () => {
     return (
         <>
-            <MODAL />
-            <HEADER />
-            <BENEFITS />
-            <SERVICES />
-            <TEAM />
-            <CLIENT />
-            <OFFER />
-            <FOOTER />
+            <HelmetProvider>
+                <Helmet>
+                    <title>IT-Key</title>
+                    <meta name="Основная страница" content="Добро пожаловать на наш сайт ItKey" />
+                    <link rel="canonical" href="/" />
+                </Helmet>
+
+                <MODAL />
+                <HEADER />
+                <BENEFITS />
+                <SERVICES />
+                <TEAM />
+                <CLIENT />
+                <OFFER />
+                <FOOTER />
+            </HelmetProvider>
         </>
     )
 }
