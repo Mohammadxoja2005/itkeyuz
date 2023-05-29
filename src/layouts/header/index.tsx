@@ -27,7 +27,7 @@ const HEADER = () => {
     return (
         <>
             <header data-header="header" className={styles.header}>
-                <BACKGROUNDVIDEO />
+                {/* <BACKGROUNDVIDEO /> */}
                 <div className={styles.header_container}>
 
                     <div className={styles.header_navbar}>
