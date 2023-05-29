@@ -188,28 +188,28 @@ export const services: Array<{ id: number, icon: string, name: string, des: Arra
     },
     {
         id: 8,
-        icon: SERVICE8,
-        name: "Имидж сайт",
+        icon: SERVICE7,
+        name: "Telegram",
         des: [
             {
 
                 id: 1,
-                bulletPoint: 'Уникальный решения по дизайну'
+                bulletPoint: 'Telegram бот для реализации заказа с магазинов и возможности оформления доставки'
             },
             {
 
                 id: 2,
-                bulletPoint: 'Необычные элементы, подчеркивающие индивидуальность'
+                bulletPoint: 'Внедрение Telegram бота в ваш бизнес'
             },
             {
 
                 id: 3,
-                bulletPoint: 'Оригинальные запоминающиеся элементы вёрстки'
+                bulletPoint: 'Создание Telegram бота для любой сферы бизнеса '
             },
             {
 
                 id: 4,
-                bulletPoint: 'Тщательная проработка ассоциаций с Вашим брендом'
+                bulletPoint: 'Создание рекламного Telegram бота'
             }
         ],
         price: 1000000
