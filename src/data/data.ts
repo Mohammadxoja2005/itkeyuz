@@ -15,7 +15,6 @@ import SERVICE5 from "../assets/icons/service5.png";
 import SERVICE6 from "../assets/icons/service6.png";
 import SERVICE7 from "../assets/icons/service7.png";
 import SERVICE8 from "../assets/icons/service8.png";
-
 // client img 
 import CLIENT1 from "../assets/img/client1.png"
 import CLIENT2 from "../assets/img/client2.png"
@@ -62,7 +61,6 @@ export const benefits: Array<{ id: number, name: string, des: string, icon: stri
         icon: BENEFIT6
     }
 ]
-
 
 export const services: Array<{ id: number, icon: string, name: string, des: Array<{ id: number, bulletPoint: string }>, price: number }> = [
     {

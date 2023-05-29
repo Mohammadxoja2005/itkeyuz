@@ -46,13 +46,13 @@ const HEADER = () => {
                         <div className={styles.header_content_social_con}>
 
                             <div className={styles.header_social}>
-                                <img src={TELEGRAM} alt="telegram" />
+                                <a target='_blank' href="https://t.me/ITKEYUZB"><img src={TELEGRAM} alt="telegram" /></a>
                             </div>
                             <div className={styles.header_social}>
-                                <img src={INSTAGRAM} alt="instagram" />
+                                <a target='_blank' href="https://instagram.com/itkeysofttech?igshid=MzRlODBiNWFlZA=="><img src={INSTAGRAM} alt="instagram" /></a>
                             </div>
                             <div className={styles.header_social}>
-                                <img src={FACEBOOK} alt="facebook" />
+                                <a target='_blank' href="https://www.facebook.com/ITKEYUZ?mibextid=LQQJ4d"><img src={FACEBOOK} alt="facebook" /></a>
                             </div>
                             <div className={styles.header_social}>
                                 <p className={styles.header_social_scroll}>scroll</p>
