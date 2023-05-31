@@ -54,7 +54,7 @@ const MODAL: FC = () => {
         setNextSchedule(false);
         setIsOpen(false);
 
-        axios.post('https://backend-itkey.doon.uz/create', { name, phone })
+        axios.post('https://backend-itkey.ikcrm.uz/create', { name, phone })
             .then((response) => {
                 setIsOpen(false);
             })

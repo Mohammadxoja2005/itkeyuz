@@ -29,7 +29,7 @@ const OFFER: FC = () => {
     const onSubmit = (e: any) => {
         e.preventDefault();
 
-        axios.post('https://backend-itkey.doon.uz/create', { name, phone })
+        axios.post('https://backend-itkey.ikcrm.uz/create', { name, phone })
             .then((response) => {
                 notify()
             }).then(() => {
