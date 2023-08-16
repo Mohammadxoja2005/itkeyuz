@@ -12,7 +12,9 @@ const NOTIFICATION: FC = () => {
     localStorage.setItem('isModalOpen', '0');
 
     useEffect(() => {
-        ReactGA.pageview(window.location.pathname);
+        ReactGA.pageview(window.location.pathname); 
+        
+        (window as any).ym(89525194, 'hit', window.location.href);
     }, [])
 
     useEffect(() => {

@@ -34,12 +34,12 @@ const FOOTER: FC = () => {
                         </h3>
                     </div>
                     <div className={styles.footer_contact_detail}>
-                        <div className={styles.footer_contact_detail_icon}>
+                        {/* <div className={styles.footer_contact_detail_icon}>
                             <img src={PHONECALL} alt="itkey phone" />
                             <h3 className={styles.footer_contact_icon_name}>Помощь специалиста</h3>
-                        </div>
+                        </div> */}
                         <h3 className={styles.footer_contact_phone}>
-                            +998(99)335-75-78
+                            {/* +998(99)335-75-78 */}
                         </h3>
                     </div>
                     <div className={styles.footer_contact_detail}>

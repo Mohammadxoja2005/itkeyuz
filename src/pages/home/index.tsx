@@ -8,6 +8,7 @@ import TEAM from './components/team';
 import CLIENT from './components/clients';
 import OFFER from './components/offer';
 import FOOTER from '../../layouts/footer';
+import Banner from './components/banner';
 import MODAL from '../../layouts/modal';
 // react-helmet
 import { Helmet, HelmetProvider } from "react-helmet-async";
@@ -18,7 +19,11 @@ const HOME: FC = () => {
 
     useEffect(() => {
         ReactGA.pageview(window.location.pathname);
+
+        (window as any).ym(89525194, 'hit', window.location.href);
+
     }, [])
+
 
     return (
         <>
@@ -31,6 +36,7 @@ const HOME: FC = () => {
 
                 <MODAL />
                 <HEADER />
+                <Banner />
                 <BENEFITS />
                 <SERVICES />
                 <TEAM />

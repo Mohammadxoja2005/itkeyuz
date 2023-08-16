@@ -25,7 +25,6 @@ import CLIENT6 from "../assets/img/client6.png"
 // team img
 import TEAM1 from "../assets/img/team1.jpg";
 import TEAM2 from "../assets/img/team2.jpg";
-import TEAM3 from "../assets/img/team3.jpg";
 import TEAM4 from "../assets/img/team4.jpg";
 import TEAM5 from "../assets/img/team5.jpg";
 import TEAM6 from "../assets/img/team6.jpg";
@@ -264,12 +263,6 @@ export const team: Array<{ id: number, name: string, img: string, profession: st
         img: TEAM2,
         name: "Магомед",
         profession: "Web Designer"
-    },
-    {
-        id: 3,
-        img: TEAM3,
-        name: "Евгений",
-        profession: "Senior Backend Developer"
     },
     {
         id: 4,

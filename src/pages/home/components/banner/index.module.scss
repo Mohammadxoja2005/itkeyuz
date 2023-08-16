@@ -1,0 +1,51 @@
+.banner {
+  margin: 40px 20px;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  border: 2px solid #7237bd;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 24px;
+  color: white;
+  background-color: #16163c;
+  border-radius: 20px;
+}
+
+.banner_title_con {
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .banner_title {
+    font-size: 24px;
+    font-family: comic-bold;
+  }
+}
+
+.banner_info {
+  margin-bottom: 12px;
+
+  .banner_info_des {
+    font-size: 20px;
+    font-family: comic-regular;
+  }
+}
+
+.banner_info_bold {
+  font-family: comic-bold;
+}
+
+.banner_btn {
+  padding: 10px;
+  font-family: comic-semibold;
+  border-radius: 10px;
+  margin-left: auto;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(to right, #fd0988, #7237bd);
+}

@@ -48,22 +48,23 @@ const MODAL: FC = () => {
 
     const notify = () => toast("Форма успешна отправлена");
 
-    const onSubmit = (e: any) => {
+    const onSubmit = async (e: any) => {
         e.preventDefault();
 
         setNextSchedule(false);
         setIsOpen(false);
 
-        axios.post('https://backend-itkey.ikcrm.uz/create', { name, phone })
-            .then((response) => {
-                setIsOpen(false);
-            })
-            .then(() => {
-                notify()
-            })
-            .then(() => {
-                navigate('/notification')
-            })
+        axios.post('https://itkey.ikcrm.uz/api/send-data', {
+            token: "base64:YXJkX2FwaV90b2tlbl9oYXNo",
+            source: "itkey.uz",
+            phone: phone,
+            fio: name,
+        }).then((response) => {
+            setIsOpen(false);
+            notify()
+        }).then(() => {
+            navigate('/notification')
+        })
     }
 
     const closeModal = () => {
