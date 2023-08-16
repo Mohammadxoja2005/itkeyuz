@@ -19,20 +19,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
-  .banner_title {
-    font-size: 24px;
-    font-family: comic-bold;
-  }
+.banner_title {
+  font-size: 24px;
+  font-family: comic-bold;
 }
 
 .banner_info {
   margin-bottom: 12px;
+}
 
-  .banner_info_des {
-    font-size: 20px;
-    font-family: comic-regular;
-  }
+.banner_info_des {
+  font-size: 20px;
+  font-family: comic-regular;
 }
 
 .banner_info_bold {
@@ -48,4 +48,30 @@
   text-decoration: none;
   color: white;
   background: linear-gradient(to right, #fd0988, #7237bd);
+}
+
+@media screen and (max-width: 576px) {
+  .banner_title {
+    font-size: 20px;
+  }
+  .banner_info_des {
+    font-size: 18px;
+  }
+
+  .banner_logo {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .banner_title {
+    font-size: 18px;
+  }
+  .banner_info_des {
+    font-size: 16px;
+  }
+
+  .banner_logo {
+    transform: scale(0.7);
+  }
 }

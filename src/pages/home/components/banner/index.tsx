@@ -9,7 +9,7 @@ const Banner: FC = () => {
 
                 <div className={styles.banner_title_con}>
                     <h2 className={styles.banner_title}>Лучшее решение для застройщиков</h2>
-                    <img src={IKCRMLOGO} alt="ikcrm logo" />
+                    <img className={styles.banner_logo} src={IKCRMLOGO} alt="ikcrm logo" />
                 </div>
 
                 <div className={styles.banner_info}>
@@ -21,7 +21,6 @@ const Banner: FC = () => {
                 <a target='_blank' className={styles.banner_btn} href='https://ikcrm.uz/'>
                     Перейти
                 </a>
-
             </div>
         </section>
     )
